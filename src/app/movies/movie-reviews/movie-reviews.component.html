@@ -1,0 +1,17 @@
+<h2>Reviews for {{ movie.title }}</h2>
+<section>
+  <table class="table table-bordered">
+    <thead>
+      <th>Movie</th>
+      <th>Reviewer</th>
+      <th>Stars</th>
+      <th>Review</th>
+    </thead>
+    <tbody *ngFor="let review of reviews" (click)="selectedMovie(movie)" [routerLink]="['movie', movie.id]">
+      <td>{{ review.id }}</td>
+      <td>{{ review.author }}</td>
+      <td>{{ review.stars }}</td>
+      <td>{{ review.review }}</td>
+    </tbody>
+  </table>
+</section>

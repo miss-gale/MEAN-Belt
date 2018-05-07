@@ -1,0 +1,14 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+
+.appName {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navBar {
+  display: inline;
+}
